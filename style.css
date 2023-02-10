@@ -8,7 +8,7 @@ main{
 section{
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
+    align-items: flex-end;
     justify-content: space-around;
     margin: auto 0;
 }
@@ -27,3 +27,9 @@ article:nth-of-type(2)  {order: 2;}
 article:nth-of-type(3)  {order: 5;}
 article:nth-of-type(4)  {order: 1;}
 article:nth-of-type(5)  {order: 4;}
+
+@media all and (max-width:500px) {
+    section{
+        flex-flow: column wrap;
+    }
+}
